@@ -14,17 +14,27 @@
     align-items: center;
     gap: 22px;
 }
+.header-social a{
+    transition: .5s ease;
+}
+.header-social a:hover{
+    opacity: .8;
+}
 .header-info{
     display: flex;
     align-items: center;
     gap: 25px;
 }
+.header-info-icon img{
+    display: block;
+}
 .header-info-item{
     display: flex;
-    align-items: center;
     gap: 10px;
+    align-items: center;
 }
 .header-info-text{
+    color: #FFFFFF;
     font-size: 14px;
-    font-weight: ;
+    font-weight: 400;
 }
