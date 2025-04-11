@@ -1,4 +1,5 @@
 @import url('global.css');
+/*HEADER-TOP START*/
 .header-top{
     width: 100%;
     background-color: #33344F;
@@ -38,3 +39,47 @@
     font-size: 14px;
     font-weight: 400;
 }
+/*HEADER-TOP END*/
+
+/*HEADER-BOTTOM START*/
+.header-bottom{
+    background-color: #FFFFFF;
+    padding: 24px 0;
+}
+.header-bottom-row{
+    display: flex;
+    align-items: center;
+    gap: 68px;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header-logo-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.header-btn{
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 16px 54px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    background-color: #5B78CD;
+}
+.menu-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+.menu-nav ul .sub-menu{
+    display: none;
+}
+/*HEADER-BOTTOM END*/
