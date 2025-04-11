@@ -57,7 +57,7 @@ html, body {
 }
 
 body {
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	color: #000;
 	line-height: 1.6;
 	margin: 0;
@@ -68,7 +68,7 @@ body {
 }
 
 input, label, textarea, button {
-	font-family: 'Roboto';
+	font-family: 'Roboto',sans-serif;
 	outline: none;
 }
 
@@ -89,4 +89,10 @@ a {
 .uppercase {
 	text-transform: uppercase;
 }
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
 /* Global Styles END */
+
