@@ -74,7 +74,7 @@ input, label, textarea, button {
 
 
 h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
+	margin:0;
 }
 
 input, textarea, div {
@@ -94,6 +94,48 @@ a {
 	max-width: 1200px;
 	margin: 0 auto;
 	border: 1px solid red;
+}
+.button{
+	color: #FFFFFF;
+	background-color: #4a64b9;
+	display: inline-block;
+	padding: 14px 50px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 400;
+	transition: .5s ease;
+}
+.button:hover{
+	background-color: #172f6e;
+}
+.swiper-pagination-bullet{
+	width: 18px;
+	height: 18px;
+	border: 1px solid #ffffff;
+	background-color: #D4D4D4;
+	opacity: 1;
+}
+.swiper-pagination-bullet-active{
+	background-color: #4a64b9;
+	margin: 0 5px !important;
+}
+.swiper-button-prev,
+.swiper-button-next{
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+	font-size: 22px;
+	color: #3D445D;
+}
+.swiper-button-prev{
+	left: 15px;
+}
+.swiper-button-next{
+	right: 15px;
 }
 /* Global Styles END */
 
