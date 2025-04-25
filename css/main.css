@@ -81,6 +81,10 @@
 .header-btn {
 }
 
+.menu-nav {
+    z-index: 9;
+}
+
 .menu-nav-list {
     display: flex;
     align-items: center;
@@ -107,6 +111,7 @@
     visibility: hidden;
     transition: .5s ease;
     transform: translateX(20px);
+    background-color: white;
 }
 
 .sub-menu-item a {
@@ -162,7 +167,7 @@
     height: 100%;
 }
 
-.swiper-btn{
+.swiper-btn {
 }
 
 
@@ -180,7 +185,45 @@
     margin-bottom: 31px;
     max-width: 553px;
 }
-.swiper-banner .swiper-pagination{
+
+.swiper-banner .swiper-pagination {
     bottom: 55px;
 }
+
 /* BANNER END*/
+/* ABOUT SECTION START*/
+.about-wrapper {
+    padding-top: 135px;
+}
+
+.about-flex {
+    display: flex;
+    gap: 61px;
+}
+
+.about-left {
+    max-width: 488px;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    align-items: center;
+}
+
+.title-text {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.about-desc {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about-right {
+
+}
+
+/* ABOUT SECTION END*/
