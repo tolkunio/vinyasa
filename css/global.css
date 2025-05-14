@@ -47,7 +47,12 @@
 
 
 /* Global Styles START */
-:root {}
+:root {
+	--color1:#5B78CD;
+	--color2:#2D3A4E;
+	--color3:#F4F4F4;
+	--color-text:#757171;
+}
 * {
 	box-sizing: border-box;
 }
