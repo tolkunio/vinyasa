@@ -278,3 +278,119 @@
     font-weight: 400;
 }
 /* ABOUT SECTION END*/
+
+/* CLASS SECTION START*/
+.class-wrapper{
+    background-color: var(--color3);
+    text-align: center;
+}
+.class-flex{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.class-desc{
+    padding-top: 20px;
+    color: #9D9C9C;
+    font-size: 20px;
+    font-weight: 400;
+}
+.yoga-classes{
+    padding: 65px 0px 100px 0px;
+    display: flex;
+    gap: 20px;
+}
+.yoga-class{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.yoga-class:hover .classes-thumb img{
+    transform: scale(1.1);
+}
+.yoga-class:hover .yoga-class-title{
+    color: var(--color1);
+}
+.yoga-class-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    transition: .5s ease;
+}
+.classes-thumb{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.classes-thumb img{
+    max-width: 100%;
+    display: block;
+    transition: .8s ease;
+}
+/* CLASS SECTION END*/
+
+/* INSTRUCTORS SECTION START */
+.instructors-wrapper{
+
+}
+.instructors{
+    padding: 65px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.instructor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EBEBEB;
+}
+.instructor-thumb{
+    border-radius: 5px;
+    overflow: hidden;
+    height: 300px;
+}
+.instructor:hover .instructor-thumb img{
+    transform: scale(1.1);
+}
+.instructor-name{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #D8D1D1;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color1);
+}
+.instructor-direction{
+    padding-top: 20px;
+    font-size: 14px;
+    color: #B6ADAD;
+    font-weight: 400;
+}
+.direction-name{
+    padding-top: 11px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+}
+.instructor-social{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.instructor:hover .instructor-name{
+    color: var(--color2);
+}
+.instructor-thumb img{
+    width: 100%;
+    display: block;
+}
+.instructor-social a img{
+    filter: contrast(0);
+}
+.instructor-social a:hover img{
+    filter: brightness(0.3);
+}
+/* INSTRUCTORS SECTION END */
