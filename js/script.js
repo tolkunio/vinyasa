@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    //banner
     const swiperBanner = new Swiper('.swiper-banner', {
         speed: 700,
         spaceBetween: 0,
@@ -12,4 +13,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+
+    //gallery START
+    // init Masonry
+    var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        // use element for option
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        gutter:20,
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+    });
+
+    //gallery END
 }, false);
+

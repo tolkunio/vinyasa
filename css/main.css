@@ -297,6 +297,7 @@
     font-size: 20px;
     font-weight: 400;
 }
+
 .yoga-classes{
     padding: 65px 0px 100px 0px;
     display: flex;
@@ -394,3 +395,30 @@
     filter: brightness(0.3);
 }
 /* INSTRUCTORS SECTION END */
+
+/* GALLERY SECTION START*/
+.gallery-wrapper{
+    background-color: #3F3854;
+}
+.gallery-desc{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #DDD8D8;
+    padding-bottom: 60px;
+}
+.grid-item {
+    float: left;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.grid-item img{
+    max-width: 100%;
+}
+.grid-item a,
+.grid-item a img{
+    display: block;
+}
+.grid-sizer,
+.grid-item { width: calc(25% - 15px) }
+/* GALLERY SECTION END*/
