@@ -64,5 +64,16 @@ document.addEventListener('DOMContentLoaded', function () {
        }
     })
     //faq END
+
+    //review
+    const swiperReviews = new Swiper('.swiper-reviews', {
+        speed: 700,
+        spaceBetween: 20,
+        slidesPerView:4,
+        pagination:{
+            el:'.swiper-reviews .swiper-pagination',
+            clickable: true
+        }
+    });
 }, false);
 
