@@ -49,5 +49,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //gallery END
+
+    //faq START
+    $('.faq-question').on('click',function (){
+        var answer = $(this).next('.faq-answer');
+       if ($(this).hasClass('is-active')){
+           answer.slideUp();
+           $(this).removeClass('is-active');
+       }
+       else {
+           answer.slideDown();
+           $(this).addClass('is-active');
+
+       }
+    })
+    //faq END
 }, false);
 
