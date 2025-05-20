@@ -1,173 +1,208 @@
 /* Fonts START */
 @font-face {
-	font-family: 'Roboto';
-	src: local('Roboto Bold'), local('Roboto-Bold'),
-		url('../fonts/Roboto-Bold.woff2') format('woff2');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: local('Roboto Light'), local('Roboto-Light'),
-		url('../fonts/Roboto-Light.woff2') format('woff2');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'),
+    url('../fonts/Roboto-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: local('Roboto Black'), local('Roboto-Black'),
-		url('../fonts/Roboto-Black.woff2') format('woff2');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Roboto';
+    src: local('Roboto Black'), local('Roboto-Black'),
+    url('../fonts/Roboto-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: local('Roboto Medium'), local('Roboto-Medium'),
-		url('../fonts/Roboto-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('../fonts/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: local('Roboto'), local('Roboto-Regular'),
-		url('../fonts/Roboto-Regular.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 /* Fonts END */
 
 
 /* Global Styles START */
 :root {
-	--color1:#5B78CD;
-	--color2:#2D3A4E;
-	--color3:#F4F4F4;
-	--color-text:#757171;
+    --color1: #5B78CD;
+    --color2: #2D3A4E;
+    --color3: #F4F4F4;
+    --color-text: #757171;
 }
+
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	color: #000;
-	line-height: 1.6;
-	margin: 0;
-	padding: 0;
-	min-width: 320px;
-	position: relative;
-	font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    position: relative;
+    font-weight: 400;
 }
 
 input, label, textarea, button {
-	font-family: 'Roboto',sans-serif;
-	outline: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 
 h1, h2, h3, h4, h5, h6, p {
-	margin:0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 input, textarea, div {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 ul {
-	margin: 0;
+    margin: 0;
 }
+
 a {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
+
 .uppercase {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
-	border: 1px solid red;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
 }
-.button{
-	color: #FFFFFF;
-	background-color: #4a64b9;
-	display: inline-block;
-	padding: 14px 50px;
-	border-radius: 5px;
-	font-size: 18px;
-	font-weight: 400;
-	transition: .5s ease;
+
+.button {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #4a64b9;
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .5s ease;
+    border: none;
 }
-.button:hover{
-	background-color: #172f6e;
+
+.button:hover {
+    background-color: #172f6e;
 }
-.swiper-pagination-bullet{
-	width: 18px;
-	height: 18px;
-	border: 1px solid #ffffff;
-	background-color: #D4D4D4;
-	opacity: 1;
+
+input, textarea, select {
+    border-radius: 5px;
+    padding: 16px 25px;
+    border: 1px solid #E1E1E1;
+    background-color: #EFF3F9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
 }
-.swiper-pagination-bullet-active{
-	background-color: #4a64b9;
-	margin: 0 5px !important;
+
+input::placeholder,
+textarea::placeholder {
+    color: #9F9E9E;
 }
+
+.swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ffffff;
+    background-color: #D4D4D4;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4a64b9;
+    margin: 0 5px !important;
+}
+
 .swiper-button-prev,
-.swiper-button-next{
-	width: 50px;
-	height: 50px;
-	background-color: #ffffff;
-	border-radius: 5px;
+.swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
+
 .swiper-button-prev::after,
-.swiper-button-next::after{
-	font-size: 22px;
-	color: #3D445D;
+.swiper-button-next::after {
+    font-size: 22px;
+    color: #3D445D;
 }
-.swiper-button-prev{
-	left: 15px;
+
+.swiper-button-prev {
+    left: 15px;
 }
-.swiper-button-next{
-	right: 15px;
+
+.swiper-button-next {
+    right: 15px;
 }
-.title-white{
-	color: white;
+
+.title-white {
+    color: white;
 }
 
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
-	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	/* ideally, transition speed should match zoom duration */
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    /* ideally, transition speed should match zoom duration */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
-	opacity: 1;
+    opacity: 1;
 }
+
 .mfp-with-zoom.mfp-ready.mfp-bg {
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
-	opacity: 0;
+    opacity: 0;
 }
+
 /* Global Styles END */
 
