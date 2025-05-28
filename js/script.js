@@ -1,4 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
+    //header
+    $('.open-mobile-sub-menu').on('click', function (){
+       var mobilesubmenu = $(this).prev('.mobile-sub-menu');
+       if(mobilesubmenu.hasClass('is-active')){
+           mobilesubmenu.slideUp();
+           mobilesubmenu.removeClass('is-active');
+           $(this).removeClass('is-active');
+       }
+       else {
+           mobilesubmenu.slideDown();
+           mobilesubmenu.addClass('is-active');
+           $(this).addClass('is-active');
+       }
+    });
+    //hamburger
+    var headermobile = $('.header-mobile');
+    $('.header-hamburger').on('click', function (){
+        headermobile.addClass('is-active');
+    });
+    $('.header-mobile-close').on('click', function (){
+        headermobile.removeClass('is-active');
+    });
     //banner
     const swiperBanner = new Swiper('.swiper-banner', {
         speed: 700,
