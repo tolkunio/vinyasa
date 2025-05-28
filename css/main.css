@@ -157,14 +157,18 @@
 /*HEADER-BOTTOM END*/
 
 /* BANNER START*/
+.swiper-banner, .swiper-slide{
+    height: auto;
+}
 .banner-item {
     z-index: 0;
     position: relative;
     padding: 120px 0;
     color: #ffffff;
-    min-height: 564px;
+    height:100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
 }
 
 .banner-item::after {
@@ -860,6 +864,9 @@
 /*FOOTER END*/
 
 /*RESPONSIVE START*/
+@media screen and (max-width:1380px ) {
+
+}
 @media screen and (max-width: 1200px) {
     .menu-nav-list {
         gap: 15px;
@@ -932,7 +939,7 @@
     }
 
     .header-mobile-logo a img {
-        max-width: 120px;
+        max-width: 180px;
     }
 
     .header-mobile-close img {
@@ -989,10 +996,20 @@
         display: block;
     }
 
-    .button {
-        padding: 14px 50px;
+    .h-button {
+        cursor: pointer;
+        display: inline-block;
+        padding: 14px 28px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        transition: .5s ease;
+        border: none;
         background-color: white;
         color: black;
+    }
+    .h-button:hover{
+        background-color: rgba(255,255,255,.5);
     }
 
     .menu-mobile-nav-list {
@@ -1052,6 +1069,16 @@
     .open-mobile-sub-menu.is-active {
         transform: rotate(90deg);
     }
+    .banner-title{
+        font-size: 36px;
+        line-height: 125%;
+        margin-bottom: 25px;
+    }
+    .banner-desc{
+        line-height: 180%;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
