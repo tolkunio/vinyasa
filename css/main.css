@@ -247,7 +247,6 @@
 
 .about-right {
     position: relative;
-    margin-left: auto;
 }
 
 .about-right img {
@@ -328,7 +327,8 @@
 
 .yoga-classes {
     padding: 65px 0 100px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -373,8 +373,8 @@
 
 .instructors {
     padding: 65px 0 100px 0;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -388,7 +388,7 @@
 .instructor-thumb {
     border-radius: 5px;
     overflow: hidden;
-    height: 300px;
+    height: auto;
 }
 
 .instructor:hover .instructor-thumb img {
@@ -817,7 +817,8 @@
 }
 
 .footer-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 100px;
 }
 
@@ -886,11 +887,13 @@
     .about-first-img {
         max-width: 450px;
     }
-    .about-second-img{
+
+    .about-second-img {
         max-width: 350px;
         left: -90px;
     }
-    .about-left{
+
+    .about-left {
         max-width: 470px;
     }
 
@@ -1096,69 +1099,142 @@
         line-height: 180%;
         margin-bottom: 20px;
     }
-    .about-wrapper{
+
+    .about-wrapper {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-    .about-flex{
+
+    .about-flex {
         flex-direction: column;
     }
+
     .about-left {
         max-width: 100%;
     }
-    .about-title{
+
+    .about-title {
         justify-content: center;
     }
-    .about-img-wrapper{
+
+    .about-desc {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .about-img-wrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
         align-items: center;
     }
-    .about-first-img{
-        max-width: 500px;
+
+    .about-first-img {
+        max-width: 100%;
     }
-    .about-second-img{
-        max-width: 408px;
+
+    .about-second-img {
+        max-width: 100%;
         position: static;
         border: none;
     }
-    .about-btn{
-        position: absolute;
-        bottom: 25px;
-        right: 102px;
+
+    .about-btn {
+        position: static;
+        padding-top: 15px;
+        padding-left: 10px;
     }
-    .class-flex{
+
+    .class-flex {
         padding-top: 60px;
     }
-    .yoga-classes{
-        padding:30px 0 40px 0;
+
+    .yoga-classes {
+        padding: 30px 0 40px 0;
+        grid-template-columns: repeat(2, 1fr);
     }
-    .instructor-thumb{
-        height: 230px;
-    }
-    .instructor-name{
+
+    .instructor-name {
         padding-top: 10px;
         padding-bottom: 5px;
     }
-    .instructor-social{
+
+    .instructor-social {
         padding-top: 15px;
         padding-bottom: 20px;
     }
-    .instructors{
+
+    .instructors {
         padding: 30px 0 40px 0;
+        grid-template-columns: repeat(2, 1fr);
     }
-    .faq-wrapper,.gallery-wrapper, .review-wrapper{
+
+    .faq-desc {
+        padding-bottom: 30px;
+    }
+
+    .faq-wrapper, .gallery-wrapper, .review-wrapper {
         padding-bottom: 50px;
     }
-    .feedback-wrapper{
+
+    .feedback-wrapper {
         padding: 50px 0;
+        height: auto;
     }
+
+    .feedback-flex {
+        padding: 30px 40px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feedback-left {
+        max-width: 100%;
+    }
+
+    .feedback-right {
+        padding: 30px 15px;
+        border-left: none;
+    }
+
+    .contacts {
+        padding-bottom: 30px;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .footer-main{
+        padding: 0 35px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .footer-nav{
+        grid-gap: 20px;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
     .header-img {
         max-width: 110px;
+    }
+
+    .yoga-classes {
+        padding: 10px 0 20px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .instructors {
+        padding: 10px 0 20px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-main{
+        padding: 0;
+    }
+    .footer-nav{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
