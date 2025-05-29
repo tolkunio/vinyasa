@@ -661,7 +661,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
     margin: 0;
 }
 
@@ -818,7 +818,7 @@
 
 .footer-nav {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 100px;
 }
 
@@ -864,6 +864,136 @@
 }
 
 /*FOOTER END*/
+/*ABOUT US PAGE START*/
+.breadcrumbs-wrap {
+    padding: 58px;
+    background-color: var(--color1);
+    color: white;
+    text-align: center;
+}
+
+.breadcrumbs-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.breadcrumbs-wrap .container > span {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    font-size: 18px;
+}
+
+.breadcrumbs-last {
+    font-weight: 700;
+}
+
+.watch-btn {
+
+}
+
+.about-page-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-page-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 49px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #757171;
+}
+
+.about-page-left {
+    max-width: 554px;
+}
+
+.about-page-right {
+    margin-left: 0;
+}
+
+.about-page-button {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: var(--color1);
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .5s ease;
+    border: none;
+}
+
+.about-page-button:hover {
+    background-color: #172f6e;
+}
+
+.about-page-img {
+    max-width: 457px;
+}
+
+.about-page-numbers-wrapper {
+    background-color: var(--color2);
+}
+
+.about-page-numbers {
+    padding: 49px 52px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 45px 20px;
+    background-color: var(--color2);
+    color: #ffffff;
+}
+.about-page-video-wrap{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.video-item a{
+    display: block;
+    position: relative;
+    max-width: 793px;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 557px;
+    margin: 0 auto;
+}
+.video-item a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 44, 44, 0.3);
+    z-index: 0;
+}
+.video-item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.video-play img{
+    max-width: 65px;
+}
+/*ABOUT US PAGE END*/
 
 /*RESPONSIVE START*/
 @media screen and (max-width: 1380px ) {
@@ -1168,23 +1298,29 @@
         padding: 30px 0 40px 0;
         grid-template-columns: repeat(2, 1fr);
     }
+
     .grid-sizer,
     .grid-item {
-        width:calc(33.3% - 13px);
+        width: calc(33.3% - 13px);
     }
-    .faq-item{
+
+    .faq-item {
         font-size: 20px;
         line-height: 140%;
     }
+
     .faq-desc {
         padding-bottom: 30px;
     }
-    .faq-question{
+
+    .faq-question {
         padding: 15px;
     }
-    .faq-question::after{
+
+    .faq-question::after {
         right: 13px;
     }
+
     .faq-wrapper, .gallery-wrapper, .review-wrapper {
         padding-bottom: 50px;
     }
@@ -1212,17 +1348,20 @@
     .contacts {
         padding-bottom: 30px;
     }
-    .footer-wrapper{
+
+    .footer-wrapper {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-    .footer-main{
+
+    .footer-main {
         padding: 0 35px;
         max-width: 100%;
         margin-right: 30px;
     }
-    .footer-nav{
+
+    .footer-nav {
         grid-gap: 20px;
     }
 
@@ -1242,24 +1381,30 @@
         padding: 10px 0 20px 0;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .grid-sizer,
     .grid-item {
-        width:calc(50% - 10px);
+        width: calc(50% - 10px);
     }
-    .faq-question{
+
+    .faq-question {
         padding: 22px 60px 20px 30px;
     }
-    .feedback-flex{
+
+    .feedback-flex {
         padding: 15px 5px;
     }
+
     .feedback-title-block {
         padding-bottom: 20px;
     }
-    .footer-main{
+
+    .footer-main {
         padding: 0;
     }
-    .footer-nav{
-        grid-template-columns: repeat(2,1fr);
+
+    .footer-nav {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
