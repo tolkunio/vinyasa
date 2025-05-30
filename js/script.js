@@ -105,5 +105,10 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         }
     });
+    //video start
+    $('.magnific-inline').magnificPopup({
+        type: 'iframe',
+    });
+    //video end
 }, false);
 
