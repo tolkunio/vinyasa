@@ -994,7 +994,27 @@
     max-width: 65px;
 }
 /*ABOUT US PAGE END*/
+.instructor-us-wrapper{
+    background-color: var(--color3);
+}
+.instructor-flex{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 45px;
+}
+.instructors-text{
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 49px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #757171;
+}
+/*INSTRUCTOR US PAGE START*/
 
+/*INSTRUCTOR US PAGE END*/
 /*RESPONSIVE START*/
 @media screen and (max-width: 1380px ) {
 
@@ -1395,7 +1415,11 @@
         grid-template-columns: repeat(2,1fr);
     }
     /*about us page end*/
-
+    .instructor-flex{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 575px) {
